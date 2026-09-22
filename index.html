@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Learning & Study Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <span>AI</span> Study Assistant
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#planner">Study Plan</a>
+            <a href="#ask">Ask AI</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tag">SMART LEARNING WITH AI</p>
+
+            <h1>
+                AI Learning &<br>
+                <span>Study Assistant</span>
+            </h1>
+
+            <p>
+                Create personalized learning plans, ask questions from
+                your course materials and test your knowledge with AI-powered quizzes.
+            </p>
+
+            <button onclick="scrollToPlanner()">
+                Create Study Plan
+            </button>
+
+        </div>
+
+        <div class="ai-box">
+            <div class="ai-icon">AI</div>
+            <h2>Learn Smarter</h2>
+            <p>Personalized learning powered by AI</p>
+
+            <div class="progress-circle">
+                72%
+            </div>
+
+            <p>Current Progress</p>
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <h2>What Can AI Assistant Do?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="icon">📚</div>
+                <h3>Learning Plans</h3>
+                <p>
+                    Create personalized study plans based on your
+                    subject and available study time.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">💬</div>
+                <h3>Ask AI</h3>
+                <p>
+                    Ask questions and get simple explanations
+                    for difficult topics.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">📝</div>
+                <h3>Generate Quizzes</h3>
+                <p>
+                    Practice your knowledge with automatically
+                    generated questions.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Study Planner -->
+    <section class="planner" id="planner">
+
+        <h2>Create Your Learning Plan</h2>
+
+        <div class="planner-box">
+
+            <label>Enter Subject</label>
+            <input
+                type="text"
+                id="subject"
+                placeholder="Example: Java"
+            >
+
+            <label>Study Hours Per Day</label>
+            <input
+                type="number"
+                id="hours"
+                placeholder="Example: 2"
+                min="1"
+                max="12"
+            >
+
+            <label>Learning Goal</label>
+            <input
+                type="text"
+                id="goal"
+                placeholder="Example: Learn Java basics"
+            >
+
+            <button onclick="createPlan()">
+                Generate Learning Plan
+            </button>
+
+            <div id="planResult" class="result"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Ask AI -->
+    <section class="ask-section" id="ask">
+
+        <h2>Ask Your AI Study Assistant</h2>
+
+        <div class="chat-box">
+
+            <div id="
